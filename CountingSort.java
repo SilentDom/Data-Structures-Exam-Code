@@ -28,15 +28,15 @@ public class CountingSort {
 
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
-    // Read the number of inputs
+    // Reads the number of inputs
     int n = in.nextInt();
 
     int[] array = new int[n];
-    // Read the inputs into an array
+    // Reads the inputs into an array
     for (int i = 0; i < n; i++) {
       array[i] = in.nextInt();
     }
-    // result will contain the counts of the numebrs
+    // result array will contain the counts of the numbers
     int[] result = countingSort(array);
     for (int i = 0; i < result.length; i++) {
       System.out.print(result[i] + (i != result.length - 1 ? " " : ""));

@@ -45,8 +45,6 @@ public class Problem1 {
     }
 }
 
-    // Not sure if something was wrong but both VS Code and Zybooks did not like that this was set to 'static class Node' and I would get compilation errors.
-    // The program seems to work without it but not sure if we were in the clear to remove it? 
     class Node {
         int data;
         public Node(int data){

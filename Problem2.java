@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * Given three sorted arrays, you will write a method to merge these three arrays and return the merged sorted array. 
+ * Given three sorted arrays, this code merges these three arrays and returns a merged sorted array. 
  * 
  * Example input: A = [23, 29, 31, 37]
  * B = [4, 9, 16, 25, 36]
@@ -15,29 +15,26 @@ import java.util.Scanner;
 public class Problem2 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		// System.out.println("Enter the size of the first array");
+		// Initializes the first array
 		int size1 = input.nextInt();
 		int[] firstArray = new int[size1];
 
-		// System.out.println("Enter the elements of the first array: ");
 		for (int i = 0; i < size1; i++) {
 			firstArray[i] = input.nextInt();
 		}
 
-		// System.out.println("Enter the size of the second array");
+		// Initializes the second array
 		int size2 = input.nextInt();
 		int[] secondArray = new int[size2];
 
-		// System.out.println("Enter the elements of the second array: ");
 		for (int i = 0; i < size2; i++) {
 			secondArray[i] = input.nextInt();
 		}
 
-		// System.out.println("Enter the size of the third array");
+		// Initializes the third array
 		int size3 = input.nextInt();
 		int[] thirdArray = new int[size3];
 
-		// System.out.println("Enter the elements of the third array: ");
 		for (int i = 0; i < size3; i++) {
 			thirdArray[i] = input.nextInt();
 		}

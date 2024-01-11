@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class MatrixSearch {
 
 	// This method converts a list of integers to an array of integers
-	// Do not change this method
 	public static int[] convertIntegers(List<Integer> integers) {
 		int[] ret = new int[integers.size()];
 		Iterator<Integer> iterator = integers.iterator();
@@ -52,7 +51,6 @@ public class MatrixSearch {
 
 		int nRow, nColumn = 0;
 		do {
-			// System.out.println("Both the row and column must be > 0");
 			nRow = input.nextInt();
 			nColumn = input.nextInt();
 		} while (nRow <= 0 || nColumn <= 0);
@@ -63,17 +61,6 @@ public class MatrixSearch {
 			}
 		}
 
-		/*
-		 * System.out.println("The matrix contains: ");
-		 * for (int i = 0; i < nRow; ++i) {
-		 * for(int j = 0; j < nColumn; j++) {
-		 * System.out.printf("%5d", numbers[i][j]);
-		 * }
-		 * System.out.println();
-		 * }
-		 * System.out.println();
-		 */
-		// System.out.printf("Enter a search key:%n ");
 		int key = input.nextInt();
 
 		int[] allIndices = linearSearchExtended(numbers, key);
